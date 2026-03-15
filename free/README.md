@@ -5,8 +5,8 @@
 > **Stop configuring. Start building.** Battle-tested agent definitions, skills, and CLAUDE.md templates that make Claude Code and Cursor 10x more productive.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Agents](https://img.shields.io/badge/Agents-10%20Free-blue.svg)](#agents)
-[![Skills](https://img.shields.io/badge/Skills-5%20Free-purple.svg)](#skills)
+[![Agents](https://img.shields.io/badge/Agents-12%20Free-blue.svg)](#agents)
+[![Skills](https://img.shields.io/badge/Skills-7%20Free-purple.svg)](#skills)
 [![Templates](https://img.shields.io/badge/Templates-3%20Free-orange.svg)](#templates)
 
 ---
@@ -57,6 +57,8 @@ Production-ready agent definitions for `~/.claude/agents/`:
 | `performance-optimizer` | Find and fix performance bottlenecks | Speed up your app |
 | `security-auditor` | OWASP-based security audit | Pre-launch security |
 | `git-workflow` | Branch, PR, commit management | Clean git history |
+| `dependency-updater` | Check outdated deps, review changelogs, update safely | Keep deps current |
+| `code-explainer` | Explain complex code in plain English | Onboarding & review |
 
 ### Usage
 
@@ -78,6 +80,8 @@ Reusable workflows you can invoke with slash commands:
 | `scaffold` | `/scaffold` | Project scaffolding for any stack |
 | `deploy-check` | `/deploy-check` | Pre-deployment verification |
 | `quick-fix` | `/quick-fix` | Rapid error diagnosis and fix |
+| `type-check` | `/type-check` | TypeScript type checking + auto-fix |
+| `quick-test` | `/quick-test` | Run only tests affected by recent changes |
 
 ### Usage
 
@@ -107,18 +111,18 @@ cp templates/react-nextjs.md your-project/CLAUDE.md
 
 ## Want More?
 
-The free tier includes 10 agents, 5 skills, and 3 templates.
+The free tier includes 12 agents, 7 skills, and 3 templates.
 
 **[AgentForge Pro](https://payhip.com/AgentForgePro)** includes:
 
 | | Free | Pro ($49) | Ultimate ($79) |
 |--|------|-----------|-----------------|
-| Agents | 10 | 30+ | 50+ |
-| Skills | 5 | 15+ | 25+ |
-| CLAUDE.md Templates | 3 | 12+ | 20+ |
-| Hooks | - | 10+ | 20+ |
-| Workflows | - | 5+ | 15+ |
-| MCP Configs | - | - | 10+ |
+| Agents | 12 | 30+ | 60+ |
+| Skills | 7 | 20+ | 45+ |
+| CLAUDE.md Templates | 3 | 15+ | 25+ |
+| Hooks | - | 20+ | 36+ |
+| Workflows | - | 15+ | 34+ |
+| MCP Configs | - | - | 27+ |
 | Updates | Community | 6 months | Lifetime |
 
 **What's in Pro/Ultimate:**
