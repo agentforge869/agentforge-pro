@@ -1,0 +1,14 @@
+# Premium content (sold via Payhip)
+premium/
+dist/
+
+# Dashboard
+dashboard/node_modules/
+dashboard/business.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# State
+.claude/

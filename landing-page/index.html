@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgentForge Pro — Production-Ready AI Coding Agents</title>
+  <meta name="description" content="50+ battle-tested agents, skills, and configurations for Claude Code and Cursor. Stop configuring, start building.">
+  <meta name="keywords" content="claude code, cursor, ai agents, claude.md, coding agents, developer tools, ai configuration">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AgentForge Pro — AI Coding Agents That Actually Work">
+  <meta property="og:description" content="50+ production-ready agents, skills, and CLAUDE.md templates. 10x your AI-assisted development.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/og-image.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AgentForge Pro — AI Coding Agents">
+  <meta name="twitter:description" content="50+ production-ready agents for Claude Code and Cursor">
+
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --surface: #141414;
+      --border: #262626;
+      --text: #e5e5e5;
+      --muted: #737373;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --green: #22c55e;
+      --purple: #a855f7;
+      --orange: #f97316;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* Nav */
+    nav {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    nav .container { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.25rem; font-weight: 700; color: var(--text); text-decoration: none; }
+    .logo span { color: var(--accent); }
+    nav a { color: var(--muted); text-decoration: none; font-size: 0.9rem; margin-left: 24px; }
+    nav a:hover { color: var(--text); }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 80px 0 60px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(59,130,246,0.1);
+      border: 1px solid rgba(59,130,246,0.3);
+      color: var(--accent);
+      padding: 6px 16px;
+      border-radius: 99px;
+      font-size: 0.85rem;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    h1 .highlight { color: var(--accent); }
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+    .cta-group { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn-secondary { background: var(--surface); color: var(--text); border: 1px solid var(--border); }
+    .btn-secondary:hover { border-color: var(--muted); }
+
+    /* Stats */
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 40px 0;
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-value { font-size: 2rem; font-weight: 800; color: var(--accent); }
+    .stat-label { font-size: 0.85rem; color: var(--muted); margin-top: 4px; }
+
+    /* Features */
+    .features { padding: 60px 0; }
+    .features h2 { text-align: center; font-size: 2rem; margin-bottom: 48px; }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .feature-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+    }
+    .feature-icon { font-size: 2rem; margin-bottom: 16px; }
+    .feature-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+    .feature-card p { color: var(--muted); font-size: 0.95rem; }
+
+    /* Code block */
+    .code-section { padding: 60px 0; }
+    .code-section h2 { text-align: center; font-size: 2rem; margin-bottom: 16px; }
+    .code-section .subtitle { margin-bottom: 32px; }
+    pre {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      overflow-x: auto;
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+    pre .cmd { color: var(--green); }
+    pre .comment { color: #525252; }
+    pre .path { color: var(--orange); }
+
+    /* Pricing */
+    .pricing { padding: 80px 0; }
+    .pricing h2 { text-align: center; font-size: 2rem; margin-bottom: 16px; }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .price-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      position: relative;
+    }
+    .price-card.featured {
+      border-color: var(--accent);
+      box-shadow: 0 0 30px rgba(59,130,246,0.1);
+    }
+    .price-card .popular {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: #fff;
+      padding: 4px 16px;
+      border-radius: 99px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .price-card h3 { font-size: 1.2rem; margin-bottom: 8px; }
+    .price { font-size: 2.5rem; font-weight: 800; margin: 16px 0; }
+    .price span { font-size: 1rem; color: var(--muted); font-weight: 400; }
+    .price-card ul { list-style: none; margin: 24px 0; }
+    .price-card li {
+      padding: 8px 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .price-card li::before { content: "✓ "; color: var(--green); font-weight: 700; }
+    .price-card .btn { width: 100%; justify-content: center; }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 640px) {
+      .stats { gap: 24px; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">Agent<span>Forge</span> Pro</a>
+      <div>
+        <a href="https://github.com/YOUR_USERNAME/agentforge-pro">GitHub</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="badge">50+ Production-Ready Configurations</div>
+      <h1>AI Coding Agents<br>That <span class="highlight">Actually Work</span></h1>
+      <p class="subtitle">Battle-tested agent definitions, skills, and CLAUDE.md templates for Claude Code and Cursor. Stop configuring. Start shipping.</p>
+      <div class="cta-group">
+        <a href="#pricing" class="btn btn-primary">Get Pro — $49</a>
+        <a href="https://github.com/YOUR_USERNAME/agentforge-pro" class="btn btn-secondary">Free on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-value">50+</div>
+        <div class="stat-label">Agents & Skills</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">20+</div>
+        <div class="stat-label">CLAUDE.md Templates</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">10x</div>
+        <div class="stat-label">Faster Setup</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">0</div>
+        <div class="stat-label">Config Headaches</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="features">
+    <div class="container">
+      <h2>Everything You Need</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>Agents</h3>
+          <p>Drop-in agent definitions for code review, testing, debugging, refactoring, security audits, and more. Each one is tested on real projects and optimized for token efficiency.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Skills</h3>
+          <p>Reusable workflows triggered with slash commands. Smart commits, PR reviews, project scaffolding, deployment checks — all pre-built and ready to use.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📋</div>
+          <h3>CLAUDE.md Templates</h3>
+          <p>Framework-specific project configurations that teach Claude Code your stack's conventions, patterns, and best practices. Copy, paste, code.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>Hooks</h3>
+          <p>Pre and post-operation hooks for auto-formatting, auto-testing, security scanning, and more. Automate the boring stuff.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3>Workflows</h3>
+          <p>Multi-step development workflows: TDD cycles, CI/CD pipelines, release management, database migrations — all orchestrated.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔧</div>
+          <h3>MCP Configs</h3>
+          <p>Pre-configured MCP server setups for databases, cloud services, APIs, and development tools. One command to connect everything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="code-section">
+    <div class="container">
+      <h2>30-Second Setup</h2>
+      <p class="subtitle" style="text-align:center">Copy. Paste. Build.</p>
+      <pre>
+<span class="comment"># Get AgentForge Pro</span>
+<span class="cmd">git clone</span> <span class="path">https://github.com/YOUR_USERNAME/agentforge-pro.git</span>
+
+<span class="comment"># Install agents</span>
+<span class="cmd">cp</span> agentforge-pro/agents/*.md <span class="path">~/.claude/agents/</span>
+
+<span class="comment"># Install skills</span>
+<span class="cmd">cp</span> agentforge-pro/skills/*.md <span class="path">~/.claude/skills/</span>
+
+<span class="comment"># Add a project template</span>
+<span class="cmd">cp</span> agentforge-pro/templates/react-nextjs.md <span class="path">your-project/CLAUDE.md</span>
+
+<span class="comment"># That's it. Start coding with superpowers.</span>
+<span class="cmd">claude</span> <span class="path">"review my code for security issues"</span>
+      </pre>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2>Choose Your Plan</h2>
+      <p class="subtitle" style="text-align:center">One-time purchase. No subscriptions. Free updates included.</p>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Free</h3>
+          <div class="price">$0</div>
+          <ul>
+            <li>10 agents</li>
+            <li>5 skills</li>
+            <li>3 CLAUDE.md templates</li>
+            <li>Community support</li>
+            <li>MIT License</li>
+          </ul>
+          <a href="https://github.com/YOUR_USERNAME/agentforge-pro" class="btn btn-secondary">Get Free</a>
+        </div>
+        <div class="price-card featured">
+          <div class="popular">Most Popular</div>
+          <h3>Pro</h3>
+          <div class="price">$49 <span>one-time</span></div>
+          <ul>
+            <li>30+ agents</li>
+            <li>15+ skills</li>
+            <li>12+ CLAUDE.md templates</li>
+            <li>10+ hooks</li>
+            <li>5+ workflows</li>
+            <li>6 months of updates</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="https://payhip.com/YOUR_STORE" class="btn btn-primary">Get Pro</a>
+        </div>
+        <div class="price-card">
+          <h3>Ultimate</h3>
+          <div class="price">$79 <span>one-time</span></div>
+          <ul>
+            <li>50+ agents</li>
+            <li>25+ skills</li>
+            <li>20+ CLAUDE.md templates</li>
+            <li>20+ hooks</li>
+            <li>15+ workflows</li>
+            <li>10+ MCP configs</li>
+            <li>Lifetime updates</li>
+            <li>Direct support</li>
+          </ul>
+          <a href="https://payhip.com/YOUR_STORE" class="btn btn-secondary">Get Ultimate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Built with Claude Code — <a href="https://github.com/YOUR_USERNAME/agentforge-pro">Open Source</a></p>
+    </div>
+  </footer>
+</body>
+</html>
