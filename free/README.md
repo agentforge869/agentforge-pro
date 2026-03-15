@@ -113,7 +113,7 @@ cp templates/react-nextjs.md your-project/CLAUDE.md
 
 The free tier includes 12 agents, 7 skills, and 3 templates.
 
-**[AgentForge Pro](https://payhip.com/AgentForgePro)** includes:
+**[AgentForge Pro](https://agentforge-pro.lemonsqueezy.com)** includes:
 
 | | Free | Pro ($49) | Ultimate ($79) |
 |--|------|-----------|-----------------|
@@ -132,7 +132,7 @@ The free tier includes 12 agents, 7 skills, and 3 templates.
 - MCP server configurations for databases, APIs, cloud services
 - Regular updates as Claude Code evolves
 
-[Get AgentForge Pro →](https://payhip.com/AgentForgePro)
+[Get AgentForge Pro →](https://agentforge-pro.lemonsqueezy.com)
 
 ## Contributing
 
