@@ -14,8 +14,8 @@
   <text x="640" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="800" fill="#e5e5e5">Agent<tspan fill="#3b82f6">Forge</tspan> Pro</text>
   <text x="640" y="280" text-anchor="middle" font-family="system-ui, sans-serif" font-size="32" fill="#737373">Production-Ready AI Coding Agents</text>
   <rect x="340" y="320" width="600" height="2" fill="#262626"/>
-  <text x="640" y="390" text-anchor="middle" font-family="monospace" font-size="28" fill="#22c55e">122 Agents</text>
-  <text x="640" y="430" text-anchor="middle" font-family="monospace" font-size="28" fill="#a855f7">76 Skills</text>
+  <text x="640" y="390" text-anchor="middle" font-family="monospace" font-size="28" fill="#22c55e">128 Agents</text>
+  <text x="640" y="430" text-anchor="middle" font-family="monospace" font-size="28" fill="#a855f7">79 Skills</text>
   <text x="640" y="470" text-anchor="middle" font-family="monospace" font-size="28" fill="#f97316">25 Templates + 36 Hooks + 34 Workflows</text>
   <rect x="440" y="520" width="400" height="60" rx="8" fill="url(#accent)"/>
   <text x="640" y="560" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff">PRO PACK — $49</text>
