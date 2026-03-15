@@ -117,8 +117,8 @@ The free tier includes 12 agents, 7 skills, and 3 templates.
 
 | | Free | Pro ($49) | Ultimate ($79) |
 |--|------|-----------|-----------------|
-| Agents | 12 | 30+ | 116+ |
-| Skills | 7 | 20+ | 72+ |
+| Agents | 12 | 30+ | 122+ |
+| Skills | 7 | 20+ | 76+ |
 | CLAUDE.md Templates | 3 | 15+ | 25+ |
 | Hooks | - | 20+ | 36+ |
 | Workflows | - | 15+ | 34+ |
