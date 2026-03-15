@@ -67,6 +67,25 @@
 
     .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 
+    /* Promo Banner */
+    .promo-banner {
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 0.3px;
+    }
+    .promo-banner code {
+      background: rgba(255,255,255,0.2);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+
     /* Nav */
     nav {
       border-bottom: 1px solid var(--border);
@@ -239,6 +258,7 @@
   </style>
 </head>
 <body>
+  <div class="promo-banner">Launch Sale — Use code <code>LAUNCH20</code> for 20% off all packs</div>
   <nav>
     <div class="container">
       <a href="/" class="logo">Agent<span>Forge</span> Pro</a>
