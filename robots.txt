@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://agentforge869.github.io/agentforge-pro/sitemap.xml
