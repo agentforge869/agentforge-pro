@@ -1,0 +1,29 @@
+AgentForge Pro — 30+ Production-Ready AI Coding Agents
+
+Stop spending hours configuring Claude Code and Cursor. Get battle-tested, production-ready configurations that make AI-assisted development 10x faster.
+
+WHAT'S INCLUDED:
+
+Agents (30+)
+- 10 core agents: code review, testing, debugging, refactoring, API design, docs, migrations, performance, security, git workflow
+- 20 premium agents: React, Next.js, Vue, Svelte, Django, Rust, Docker, CI/CD, Kubernetes, IaC, Database, GraphQL, E2E testing, Load testing, Chaos engineering, Microservices, Auth, Real-time, AI integration, and more
+
+Skills (15)
+- Smart commits, PR review, scaffolding, deploy checks, quick fixes
+- TDD cycles, releases, DB migrations, API testing, security scans, performance audits, code splitting, env setup, incident response, tech debt management
+
+CLAUDE.md Templates (12)
+- React/Next.js, Node/Express, Python/FastAPI
+- Vue/Nuxt, SvelteKit, Django, Rails, Go, Rust/Axum, Flutter, React Native, Monorepo
+
+Hooks (10)
+- Auto-format, auto-test, secret guard, type check, lint-on-save, commit guard, dependency check, bundle size check, branch protection, changelog generation
+
+Workflows (5)
+- Full TDD cycle, production deploy, security hardening, tech debt sprint, new feature lifecycle
+
+FORMAT: .md files (agents, skills, templates, workflows) + .mjs files (hooks)
+INSTALL: Copy to ~/.claude/agents/, ~/.claude/skills/, or project root
+COMPATIBLE: Claude Code, Cursor, any AI coding tool that uses .md configs
+LICENSE: Personal + commercial use
+UPDATES: 6 months included

@@ -1,0 +1,13 @@
+AgentForge Ultimate — 50+ Agents, Skills, Templates, Hooks & Workflows
+
+The complete AI coding configuration toolkit. Everything in Pro, plus lifetime updates and the full free tier organized for easy installation.
+
+EVERYTHING IN PRO, PLUS:
+- Lifetime updates (not just 6 months)
+- Pre-organized directory structure (just copy and go)
+- Priority support
+- All future agents, skills, and templates added
+
+50+ total configurations covering every major framework and development workflow.
+
+One-time purchase. No subscriptions. Works with Claude Code, Cursor, and any .md-config AI tool.
